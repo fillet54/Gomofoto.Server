@@ -13,6 +13,7 @@ using Ninject.Web.Common;
 using System.Reflection;
 using System.Net.Http.Headers;
 using FiftyCuatro.Gomofoto.Models;
+using System.Data.Entity;
 
 namespace FiftyCuatro.Gomofoto
 {

@@ -12,8 +12,8 @@ namespace FiftyCuatro.Gomofoto
     {
         protected void Application_Start()
         {
-           // System.Data.Entity.Database.SetInitializer(
-            //    new GomofotoContextInitializer());
+            System.Data.Entity.Database.SetInitializer(
+                new GomofotoContextInitializer());
             //GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }

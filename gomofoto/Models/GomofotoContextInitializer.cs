@@ -12,7 +12,7 @@ namespace FiftyCuatro.Gomofoto.Models
         {
             var users = new List<User>
             {
-                new User { FirstName = "Phillip", LastName="Gomez", EmailAddress="gomez.phillip@gmail.com" }
+                new User { FirstName = "Phillip", LastName="Gomez", Username="fillet54", EmailAddress="gomez.phillip@gmail.com" }
             };
             users.ForEach(u => context.Users.Add(u));
             context.SaveChanges();
