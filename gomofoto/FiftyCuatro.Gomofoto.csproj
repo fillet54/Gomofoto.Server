@@ -157,16 +157,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\BreezeController.cs" />
+    <Compile Include="Migrations\201505150731582_InitialMigration.cs" />
+    <Compile Include="Migrations\201505150731582_InitialMigration.Designer.cs">
+      <DependentUpon>201505150731582_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IRepository.cs" />
     <Compile Include="Controllers\PhotosController.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Models\Album.cs" />
     <Compile Include="Models\GomofotoContext.cs" />
     <Compile Include="Models\GomofotoContextInitializer.cs" />
@@ -178,6 +179,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\gomofotodev.pubxml" />
+    <None Include="Properties\PublishProfiles\gomofotostaging.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -187,6 +190,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201505150731582_InitialMigration.resx">
+      <DependentUpon>201505150731582_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
